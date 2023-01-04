@@ -1,0 +1,110 @@
+@import 'normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+// @tailwind base;
+// @tailwind components;
+// @tailwind utilities;
+
+:root {
+    --primary: #e64848;
+    --second: #c21010;
+    --third: #fffde3;
+    --fourth: #cfe8a9;
+    --hover: rgb(207, 33, 33);
+    --text-primary: #393939;
+    --error-message: #ed4337;
+    --error-bg: #ed43371c;
+    --success: #4bb543;
+    --wait: #4367b5;
+    --wanted: #ffc107;
+}
+
+::selection {
+    background-color: var(--primary);
+    color: white;
+}
+
+// html {
+// -ms-overflow-style: none;
+// scrollbar-width: none;
+// }
+html::-webkit-scrollbar {
+    border-radius: 0;
+    height: 8px;
+    width: 8px;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    overflow: unset;
+    font-family: 'Montserrat', 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-rendering: optimizeSpeed;
+}
+
+.errorFormik {
+    border: 1px solid var(--error-message);
+    background-color: var(--error-bg);
+}
+
+button:disabled {
+    opacity: 0.35;
+}
+
+.loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.834);
+    z-index: 10000;
+}
+
+.spinner {
+    width: 64px;
+    height: 64px;
+    border: 8px solid;
+    border-color: #3d5af1 transparent #3d5af1 transparent;
+    border-radius: 50%;
+    animation: spin-anim 1.2s linear infinite;
+}
+
+@keyframes spin-anim {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.datatable-spinner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+// a:hover {
+//     color: initial;
+// }

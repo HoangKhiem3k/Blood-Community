@@ -1,0 +1,115 @@
+// .pick-hour-container{
+//     margin: 20px 0;
+//     display: flex;
+//     gap: 20px;
+//     flex-wrap: wrap;
+//     button {
+//         padding: 5px 10px;
+//         border: 1px solid gray;
+//     }
+//     .btn-schedule{
+//         margin-top: 20px;
+//         &.active{
+//             background-color: #f48585;
+//         }
+//     }
+// }
+// .btn-save{
+//     background-color: #f48585 !important;
+// }
+.wrapper {
+    h1 {
+        font-size: 2.4rem;
+        font-weight: 700;
+        text-align: center;
+        margin: 20px;
+    }
+}
+
+.pick-schedule {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #e4e7ed;
+    padding: 20px;
+    label {
+        font-weight: 600;
+    }
+    div {
+        &:first-child {
+            input {
+                margin-left: 10px;
+                padding: 4px;
+            }
+        }
+        &:nth-child(2) {
+            input {
+                margin-left: 10px;
+                padding: 4px;
+            }
+        }
+        &:nth-child(3) {
+            width: 70%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 12px;
+        }
+    }
+    > button {
+        align-self: center;
+        background-color: var(--primary);
+        color: white;
+        padding: 10px 16px;
+        font-weight: 600;
+        border-radius: 4px;
+        &:hover {
+            background-color: var(--second);
+        }
+        &:disabled {
+            pointer-events: none;
+        }
+    }
+}
+
+.btn-pick {
+    padding: 8px 0px;
+    border: 1px solid #344d67;
+    border-radius: 4px;
+    font-weight: 500;
+
+    &:hover {
+        background-color: #344d67;
+        color: #fffbc1;
+    }
+}
+
+.btn-active {
+    background-color: #344d67;
+    color: #fffbc1;
+}
+
+.list-schedule {
+    padding: 20px;
+    h2 {
+        text-align: center;
+        font-weight: 600;
+        font-size: 2rem;
+    }
+    div {
+        &:nth-child(2) {
+            input {
+                outline: none;
+                padding: 8px;
+                margin-bottom: 8px;
+            }
+        }
+    }
+}
+
+.confirm {
+    padding: 0.4rem 0.6rem;
+    font-size: 1.4rem;
+    color: white;
+    border-radius: 8px;
+    background-color: var(--success);
+}

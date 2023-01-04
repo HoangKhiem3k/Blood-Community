@@ -1,0 +1,68 @@
+.title {
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.status {
+    padding: 0.4rem 0.6rem;
+    font-size: 1.4rem;
+    color: white;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.inprogress {
+    background-color: rgb(247, 196, 28);
+}
+
+.done {
+    background-color: var(--success);
+}
+
+.confirm-email {
+    background-color: #dc3545;
+}
+
+.donate-info {
+    // font-size: 1.4rem;
+    h3 {
+        font-weight: 600;
+        color: var(--second);
+        padding: 0 16px;
+    }
+    padding: 16px 0;
+    border-radius: 8px;
+    margin: 12px 50px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px, rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
+    > div {
+        display: flex;
+        justify-content: space-between;
+        padding: 16px;
+        span {
+            width: 30%;
+        }
+        p {
+            font-weight: 600;
+        }
+
+        &:nth-child(2n + 1) {
+            background-color: rgb(244, 244, 244);
+        }
+    }
+}
+
+.back-btn {
+    background-color: var(--primary);
+    padding: 1rem 2.2rem;
+    color: white;
+    font-weight: 500;
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        background-color: var(--second);
+        color: white;
+    }
+    margin-left: 50%;
+    transform: translateX(-50%);
+}

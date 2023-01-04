@@ -1,0 +1,117 @@
+.wrapper {
+    width: 100%;
+    h2 {
+        font-size: 2.4rem;
+        font-weight: 700;
+        text-align: center;
+        margin: 20px;
+    }
+}
+.content {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+.header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: 600;
+    background: #f7f8fa;
+    border: 1px solid #eff0f4;
+    border-radius: 8px;
+    padding: 14px 8px;
+    margin: 0 0 10px 0;
+
+    p {
+        &:first-child {
+            width: 26%;
+        }
+
+        &:nth-child(2) {
+            width: 24%;
+        }
+
+        &:nth-child(3) {
+            width: 16%;
+        }
+
+        &:nth-child(4) {
+            width: 12%;
+        }
+        &:nth-child(5) {
+            width: 22%;
+        }
+    }
+}
+.body {
+}
+.item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid #eff0f4;
+    border-radius: 8px;
+    padding: 14px 8px;
+    margin: 6px 0;
+    > div {
+        padding-right: 12px;
+        &:first-child {
+            display: flex;
+            width: 26%;
+        }
+
+        &:nth-child(2) {
+            width: 24%;
+        }
+
+        &:nth-child(3) {
+            // width: 16%;
+        }
+
+        &:nth-child(4) {
+            width: 12%;
+        }
+        &:nth-child(5) {
+            display: flex;
+            width: 22%;
+        }
+    }
+}
+.button-wait {
+  color: var(--wait);
+  background-color: rgba(0, 204, 240, 0.2);
+  &:hover {
+      border: 2px solid var(--wait);
+  }
+}
+.button-confirm {
+  color: var(--success);
+  background-color: rgba(86, 240, 0, 0.2);
+  &:hover {
+      border: 2px solid var(--success);
+  }
+}
+.button-reject {
+  color: var(--error-message);
+  background-color: #ffd9d9;
+  &:hover {
+      border: 2px solid var(--error-message);
+  }
+}
+.button-pending {
+  color: var(--wanted);
+  background-color: rgba(252, 232, 58, 0.42);
+  &:hover {
+      border: 2px solid var(--wanted);
+  }
+}
+
+.button {
+  padding: 4px 6px;
+  border-radius: 10px;
+  margin: 0 4px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 2px solid transparent;
+}

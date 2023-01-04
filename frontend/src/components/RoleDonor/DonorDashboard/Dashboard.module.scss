@@ -1,0 +1,240 @@
+.wrapper {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    width: 100%;
+    // height: calc(100vh - 70px);
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 1.4rem;
+}
+
+.item {
+    // height: 150px;
+    padding: 18px 30px;
+    // border: 1px solid #eeeff1;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 10px;
+}
+
+.item1, .item2 > div:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    > div {
+
+        &:first-child{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--second);
+            height: 50px;
+            width: 50px;
+            background-color: rgba(245, 216, 216, 0.692);
+            border-radius: 50%;
+            svg {
+            font-size: 3rem;
+
+            }
+        }
+
+        &:nth-child(2){
+            h3 {
+                display: inline-block;
+                font-size: 3.6rem;
+                font-weight: 500;
+            }
+        }
+    }   
+}
+
+.item2 {
+    display: flex;
+    grid-column: 2/4;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 80px;
+    > div {
+
+        &:first-child > div{
+            &:first-child{
+                color:rgb(38, 31, 105);
+                background-color: rgba(38, 31, 105, 0.11);
+            }
+        }
+
+        &:nth-child(2){
+            text-align: center;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+            overflow: hidden;
+            div {
+                &:first-child {
+                    color: white;
+                    background-color: var(--error-message);
+                    padding: 4px 20px;
+                    font-size: 1.1rem;
+                }
+                &:nth-child(2){
+                    background-color: rgba(241, 241, 241, 0.774);
+                    font-size: 3.6rem;
+                    font-weight: 600;
+                    padding: 6px 20px;
+                }
+            }
+        }
+        
+    }
+}
+
+.item3 {
+    grid-area: 1/4/3/5;
+    text-align: center;
+    img{
+        margin: 0 auto;
+        display: block;
+        width: 90%;
+        margin-bottom: 30px;
+    }
+    p {
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+}
+
+.item4, .item5, .item6 {
+    position: relative;
+    div{
+        &:first-child{
+            margin-bottom: 10px;
+            font-size: 1.6rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 600;
+            svg {
+                font-size: 2.8rem;
+                font-weight: 600;
+            }
+        }
+
+        &:nth-child(2) {
+            font-size: 1.2rem;    
+        }   
+    }
+    span {
+        position: absolute;
+        right: 16px;
+        bottom: 10px;
+        
+        transition: all 0.2s ease-in-out;
+        &:hover{
+            cursor: pointer;
+            scale: 1.3;
+        }
+        svg {
+            font-size: 2.8rem;
+            font-weight: 700;
+        }
+    }
+}
+
+.item4{
+    color: white;
+    background-color: var(--second);
+}
+
+.item5 {
+    div {
+        svg {
+            color: var(--second);   
+        }
+    }
+}
+
+.item6 {
+    div{
+        svg {
+            color: rgb(38, 31, 105);   
+        }
+    }
+    
+}
+
+.item7 {
+    grid-area: 3/1/5/2;
+    text-align: center;
+    padding: 18px 46px;
+    h3{
+        font-size: 1.4rem;
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
+    div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.item8 {
+    grid-area: 3/2/5/4;
+    h3{
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+    > div {
+
+        &:first-child {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            span {
+                cursor: pointer;
+                color: var(--primary);
+                font-weight: 600;
+                &:hover {
+                    color: var(--second);
+                }
+            }
+        }
+        &:nth-child(n) {
+            margin: 12px 0;
+            display: flex;
+            align-items: center;
+            position: relative;
+            font-size: 1.2rem;
+            div {
+
+                &:first-child{
+                    width: 20%;
+                    img {
+                        width: 80%;
+                        border-radius: 6px;
+                    }
+                }
+            }
+            > span {
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+        }
+    }
+
+
+}
+
+.item9 { 
+    grid-area: 3/4/5/5;
+    text-align: center;
+    h3{
+        font-size: 1.4rem;
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
+}

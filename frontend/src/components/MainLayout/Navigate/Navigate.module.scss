@@ -1,0 +1,47 @@
+.link,
+.active {
+    margin: 4px 0;
+    position: relative;
+    display: block;
+    font-weight: 500;
+    color: var(--text-primary) !important;
+    > div {
+        padding: 8px 12px;
+        margin: 0 6px 0 10px;
+        border-radius: 6px;
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.05);
+        }
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0px;
+        height: 100%;
+        background-color: var(--second);
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+}
+
+.active {
+    color: var(--second) !important;
+    &::before {
+        width: 5px;
+    }
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    div {
+        &:first-child,
+        svg {
+            width: 35px;
+            font-size: 2.2rem;
+        }
+    }
+}

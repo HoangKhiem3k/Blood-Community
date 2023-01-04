@@ -1,0 +1,440 @@
+/* main */
+.wrapper .main {
+  width              : (100% - 250px);
+  margin-left        : 280px;
+  padding            : 25px;
+  background-size    : cover;
+}
+
+.main .block {
+  display        : flex;
+  justify-content: space-between;
+  align-items    : initial;
+  margin-bottom  : 20px;
+}
+
+/* Search */
+.search-bar {
+  width        : 100%;
+  border       : 1px solid var(--gray-color);
+  border-radius: 5px;
+  height       : 45px;
+  align-items  : center;
+  overflow-x   : hidden;
+  margin-bottom: 10px;
+}
+
+.search-bar input {
+  background: var(--gray-color);
+  height    : 100%;
+  width     : 100%;
+  padding   : 5px;
+  border    : none;
+  outline   : none;
+}
+
+/* block */
+.block {
+  padding        : 10px;
+  display        : flex;
+  justify-content: space-between;
+  align-items    : center;
+}
+
+
+.datetime .form-datetime span {
+  color      : black;
+  font-weight: 500;
+  font-size  : 16px;
+}
+
+.form-datetime input {
+  cursor: pointer;
+}
+
+.start-time {
+  margin-right: 15px;
+  border      : none;
+  outline     : none;
+  font-size   : 16px;
+  opacity     : 0.6;
+}
+
+.end-time {
+  border   : none;
+  outline  : none;
+  font-size: 16px;
+  opacity  : 0.6;
+}
+
+/* Buttun Create Campaign */
+.block {
+  padding        : 10px;
+  display        : flex;
+  justify-content: space-between;
+  align-items    : center;
+}
+
+.right .two-button {
+  display: flex;
+}
+
+.export {
+  background-color: var(--blue-main-color);
+  border          : none;
+  color           : white;
+  border-radius   : 5px;
+  padding         : 13px 35px;
+  text-align      : center;
+  text-decoration : none;
+  display         : inline-block;
+  font-size       : 15px;
+  margin          : 4px 5px;
+  cursor          : pointer;
+  font-weight     : 500;
+}
+
+.Campaign-btn Button {
+  background-color: #FF3333;
+  border          : none;
+  color           : white;
+  border-radius   : 5px;
+  padding         : 13px 22px;
+  text-align      : center;
+  text-decoration : none;
+  display         : inline-block;
+  font-size       : 15px;
+  margin          : 4px 5px;
+  cursor          : pointer;
+  font-weight     : 500;
+}
+
+.Campaign-btn Button:hover {
+  background-color: #ff33339d;
+}
+
+/* ---------------Modal------------ */
+.Campaign-Model {
+  width: 100vw;
+}
+
+.modal {
+  --bs-modal-width: 50% !important;
+}
+.modal-header button {
+  background-image: url('../../../assets/images/closeBtn.png');
+}
+.modal-content {
+  width: 60vw !important;
+}
+
+.modal-dialog{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Shared {
+  display        : flex;
+  justify-content: space-between;
+  padding        : 10px;
+  align-items    : center;
+  margin         : 20px 0;
+}
+
+.Shared input {
+  width        : 60%;
+  height       : 45px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.Shared span {
+  margin-right: 20px;
+}
+
+.input-name input:hover {
+  background: #DDDDDD;
+}
+
+.Shared .vali-form {
+  width        : 60%;
+  height       : 45px;
+  border-radius: 5px;
+}
+
+.Shared .vali-form input {
+  width: 100%;
+}
+
+.accordion-button {
+  background-color: var(--blue-main-color) !important;
+}
+
+.accordion-button:not(.collapsed) {
+  color: black !important;
+}
+
+.dropdown-active {
+  width: 60%;
+}
+
+.dropdown-active select {
+  width        : 100%;
+  height       : 45px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.accordion-body {
+  padding: 22px 27px !important;
+}
+
+.btn-secondary {
+  width          : 100%;
+  height         : 45px;
+  display        : flex !important;
+  justify-content: space-between;
+  align-items    : center;
+  margin-top     : 5px;
+}
+
+.active-btn {
+  color     : black;
+  background: #fff;
+}
+
+.datetime {
+  display        : flex;
+  justify-content: space-between;
+  align-items    : center;
+}
+
+.sche-datetime {
+  display: flex;
+}
+
+.form-modal-datetime span {
+  color      : black;
+  font-size  : 15px;
+  font-weight: 500;
+}
+
+/* Upload */
+
+
+.Shared .onchange-file {
+  padding         : 5px;
+  width           : 60%;
+  height          : 55px;
+  background-color: white;
+  border          : 2px solid black;
+  border-radius   : 5px;
+}
+
+.onchange-file input {
+  height: 100%;
+  width: 100%;
+  padding: 5px;
+  border: none;
+  outline: none;
+  margin-bottom: 15px;
+}
+
+.final-url {
+  margin-top: 120px;
+}
+
+.preview-banner {
+  height         : 100px;
+  width          : 100%;
+  border         : 1px solid gray;
+  background     : center center no-repeat;
+  cursor         : pointer;
+  background-size: contain;
+}
+
+.small-image {
+  width       : 40px;
+  height      : 40px;
+  margin-right: 5px;
+  object-fit  : cover;
+}
+
+.campaign-name {
+  display    : flex;
+  align-items: center;
+  height     : 100%;
+}
+
+.campaign-td {
+  display        : flex;
+  align-items    : center;
+  height         : 100%;
+  justify-items  : center;
+  justify-content: center;
+}
+
+.save-btn button {
+  background: var(--wait);
+  border    : none;
+  width     : 80px;
+  height    : 45px;
+  margin-top: 5px;
+}
+
+.close-btn button {
+  background: rgba(179, 2, 2, 0.712);
+  border    : none;
+  width     : 80px;
+  height    : 45px;
+  margin-top: 5px;
+}
+.close-btn button:hover {
+  background: rgba(255, 0, 0, 0.763);
+}
+.table-main .table-content {
+  width          : 100%;
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+  margin-bottom  : 10px;
+  text-align     : center;
+}
+
+.table-campaign .campaign-name {
+  display         : flex;
+  float           : left;
+  align-items     : center;
+  height          : 0;
+  padding         : 5px;
+  bottom          : 0;
+}
+
+.table-content table {
+  border         : 2px solid black;
+  width          : 100%;
+  height         : 120px;
+  border-collapse: collapse;
+}
+
+.table-content th {
+  border     : 1px solid black;
+  background : var(--blue-main-color);
+  font-weight: 700;
+  color      : #fff;
+  padding-top: 17px;
+  height     : 60px;
+}
+
+.table-content td {
+  border : 1px solid black;
+  padding: 10px;
+}
+
+.table-content td .red {
+  color      : red;
+  font-size  : 10px;
+  font-weight: bold;
+}
+
+.table-content td .green {
+  color      : green;
+  font-size  : 10px;
+  font-weight: bold;
+}
+
+.action {
+  display        : flex;
+  align-items    : center;
+  justify-content: center;
+  text-align     : center;
+}
+
+.action button {
+  padding      : 5px;
+  border-radius: 5px;
+  border       : none;
+}
+
+.action .update button {
+  background  : #14b0d2;
+  margin-right: 10px;
+  padding     : 5px 10px;
+  color       : #fff;
+  transition  : all 0.3s;
+}
+
+.action .update button:hover {
+  opacity: 0.7;
+}
+
+.action .delete button {
+  background: #FF3333;
+  padding   : 5px 10px;
+  color     : #fff;
+  transition: all 0.3s
+}
+
+.action .delete button:hover {
+  opacity: 0.7;
+}
+
+/* page-btn */
+.page-navigation {
+  text-align: center;
+}
+
+.page-disable {
+  opacity       : 0.5;
+  pointer-events: none;
+}
+
+.page-navigation-btn {
+  color      : var(--blue-main-color);
+  font-weight: 700;
+  padding    : 10px;
+  font-size  : 1.2rem;
+}
+
+.page-navigation-btn span {
+  margin-left : 10px;
+  margin-right: 10px;
+}
+
+.page-navigation-btn button {
+  padding      : 5px 15px;
+  border       : none;
+  border-radius: 5px;
+  background   : white;
+  color        : var(--blue-main-color);
+}
+
+.page-navigation-btn button:hover {
+  cursor    : pointer;
+  opacity   : 0.8;
+  transition: 0.5s;
+}
+
+@media only screen and (max-width: 1200px) {
+  .wrapper .main {
+    width      : (100% - 80px);
+    margin-left: 80px;
+  }
+
+  .main .block {
+    display: block;
+  }
+
+  .block .datetime {
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 1045px) {
+  .datetime {
+    display: block;
+  }
+}
+
+

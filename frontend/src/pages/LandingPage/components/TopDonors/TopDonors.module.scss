@@ -1,0 +1,83 @@
+.wrapper {
+    padding: 80px 0;
+    background-color: rgba(242, 107, 107, 0.1);
+}
+
+.container {
+    max-width: 1024px;
+    text-align: center;
+    margin: 0 auto;
+    > h2 {
+        font-size: 3.5rem;
+        font-weight: 700;
+        padding: 0 0 60px 0;
+    }
+}
+
+.donors {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+}
+
+.donor-item {
+    height: 280px;
+    width: 230px;
+    // border-top-left-radius: 50px;
+    // border-bottom-right-radius: 50px;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    cursor: pointer;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    h2 {
+        font-weight: 700;
+    }
+}
+
+.donor-avatar {
+    width: 80px;
+    height: 80px;
+    // overflow: hidden;
+    position: relative;
+    img {
+        border-radius: 50%;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    span {
+        position: absolute;
+        bottom: -4px;
+        right: 0;
+        border-radius: 50%;
+        padding: 4px 6px;
+        background-color: white;
+        svg {
+            color: var(--wanted);
+        }
+    }
+}
+
+.donor-name {
+    height: 180px;
+    h3 {
+        font-size: 1.4rem;
+        margin: 0px 0 12px 0;
+    }
+    p{
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
+}
+.donor-numOfDonate {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--primary);
+}

@@ -1,0 +1,140 @@
+.wrapper {
+    width: 100%;
+
+    h2 {
+        font-size: 2.4rem;
+        font-weight: 700;
+        text-align: center;
+        margin: 20px;
+    }
+}
+
+.content {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: 600;
+    background: #f7f8fa;
+    border: 1px solid #eff0f4;
+    border-radius: 8px;
+    padding: 14px 8px;
+    margin: 0 0 10px 0;
+
+    p {
+        &:first-child {
+            width: 20%;
+        }
+
+        &:nth-child(2) {
+            width: 13%;
+        }
+
+        &:nth-child(3) {
+            width: 16%;
+        }
+
+        &:nth-child(4) {
+            width: 20%;
+        }
+
+        &:nth-child(5) {
+            width: 16%;
+        }
+    }
+}
+
+.body {
+    width: 100%;
+}
+
+.item {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: #f7f8fa;
+    border: 1px solid #eff0f4;
+    border-radius: 8px;
+    padding: 14px 8px;
+    margin: 6px 0;
+
+    >div {
+        &:first-child {
+            width: 20%;
+        }
+
+        &:nth-child(2) {
+            width: 13%;
+        }
+
+        &:nth-child(3) {
+            width: 16%;
+        }
+
+        &:nth-child(4) {
+            width: 20%;
+        }
+
+        &:nth-child(5) {
+            width: 16%;
+        }
+
+        // &:nth-child(2) {
+        //     width: 24%;
+        // }
+
+        // &:nth-child(3) {
+        //     width: 16%;
+        // }
+
+        // &:nth-child(4) {
+        //     width: 12%;
+        // }
+        // &:nth-child(5) {
+        //     display: flex;
+        //     width: 22%;
+        // }
+    }
+}
+
+.button-confirm {
+    color: var(--success);
+    background-color: rgba(86, 240, 0, 0.2);
+
+    &:hover {
+        border: 2px solid var(--success);
+    }
+}
+
+.button-reject {
+    color: var(--error-message);
+    background-color: #ffd9d9;
+
+    &:hover {
+        border: 2px solid var(--error-message);
+    }
+}
+
+.button-pending {
+    color: var(--wanted);
+    background-color: rgba(252, 232, 58, 0.42);
+
+    &:hover {
+        border: 2px solid var(--wanted);
+    }
+}
+
+.button {
+    padding: 4px 6px;
+    border-radius: 10px;
+    margin: 0 4px;
+    font-weight: 600;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
